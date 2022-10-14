@@ -1,0 +1,17 @@
+DATA:
+  DATASET: iemocap
+  DATA_PATH: '/148Dataset/data-fang.yuanbo/feature/iemocap/wavlm_large_24/'
+  SPK_PATH: '/148Dataset/data-fang.yuanbo/feature/iemocap/xvector/'
+  CSV_PATH: '/148Dataset/data-fang.yuanbo/feature/iemocap/names_labels_dom_impro_script_exc.csv'
+  WAV_LENGTH: 326
+  USE_FEATURE: 'wavlm'
+MODEL:
+  TYPE: search
+  NAME: BAS_iemocap_wavlm
+  NUM_CLASSES: 4
+  DROP_RATE: 0.5
+TRAIN:
+  EPOCHS: 100
+  WEIGHT_DECAY: 0.005
+  BASE_LR: 0.005
+  STRATEGY: '5flod'

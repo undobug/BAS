@@ -1,0 +1,16 @@
+DATA:
+  DATASET: meld
+  DATA_PATH: '/148Dataset/data-fang.yuanbo/feature/meld/hubert_large_24/'
+  CSV_PATH: '/148Dataset/data-fang.yuanbo/dataset/MELD_dataset/'
+  WAV_LENGTH: 224
+  USE_FEATURE: 'hubert'
+MODEL:
+  TYPE: search
+  NAME: BAS_meld_hubert
+  NUM_CLASSES: 7
+  DROP_RATE: 0.5
+TRAIN:
+  EPOCHS: 100
+  WEIGHT_DECAY: 1e-4
+  BASE_LR: 0.005
+
